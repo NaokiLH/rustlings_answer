@@ -7,8 +7,6 @@
 // you think each value is. That is, add either `string_slice` or `string`
 // before the parentheses on each line. If you're right, it will compile!
 
-// I AM NOT DONE
-
 fn string_slice(arg: &str) {
     println!("{}", arg);
 }
@@ -17,14 +15,14 @@ fn string(arg: String) {
 }
 
 fn main() {
-    ???("blue");
-    ???("red".to_string());
-    ???(String::from("hi"));
-    ???("rust is fun!".to_owned());
-    ???("nice weather".into());
-    ???(format!("Interpolation {}", "Station"));
-    ???(&String::from("abc")[0..1]);
-    ???("  hello there ".trim());
-    ???("Happy Monday!".to_string().replace("Mon", "Tues"));
-    ???("mY sHiFt KeY iS sTiCkY".to_lowercase());
+    println!("blue");
+    let t = ("red".to_string());
+    let t = (String::from("hi"));
+    let t = ("rust is fun!".to_owned());
+    let t: String = ("nice weather".into());
+    let t = (format!("Interpolation {}", "Station"));
+    let t = (&String::from("abc")[0..1]);
+    let t = ("  hello there ".trim());
+    let t = ("Happy Monday!".to_string().replace("Mon", "Tues"));
+    let t = ("mY sHiFt KeY iS sTiCkY".to_lowercase());
 }
